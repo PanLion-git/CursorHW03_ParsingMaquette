@@ -8,7 +8,7 @@
     font-family: 'Lato', sans-serif;
     /* font-family: 'Lato', 'Times New Roman', sans-serif;
     font-family: 'Times New Roman', sans-serif; */
-  }
+}
 
 html, body {
   margin: 0 auto;
@@ -16,14 +16,11 @@ html, body {
   color: #032F48;
   /* margin: 0; */
 }
-
 body {
   width: 1160px;
 }
-
 header {
   background-color: #FAFAFA;
-
 }
 
 .divMenuHeaderTop {
@@ -44,6 +41,15 @@ header {
 .divMenuHeaderTop a {
   text-decoration: none;
   color: #151F32;
+  padding: 8px 16px;
+  border-radius: 16px;
+  
+  /* Включення властивостей в анімацію */
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s, text-decoration 5s, text-decoration-color 3s;
+  transition:         width 2s, height 2s, background-color 2s,         transform 2s, text-decoration 5s, text-decoration-color 3s;
+  
+  /* Для анімації підкреслення */
+  display: inline-block;
 }
 .navMenuTop {
   display: flex;
@@ -53,6 +59,40 @@ header {
   margin-top: 45px;
   margin-left: 232px;
 }
+.divMenuHeaderTop a:hover {
+  background-color: #C2C2C2;
+}
+
+.divMenuHeaderTop a:active {
+  text-decoration: underline;
+  color: yellow;
+}
+/* .divMenuHeaderTop a:focus {
+  color: blue;
+} */
+
+/* Для анімації підкреслення */
+.divMenuHeaderTop a:after {
+  content: '';
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: black;
+  transition: 0.5s;
+}
+
+/* Для анімації підкреслення */
+.divMenuHeaderTop a:hover:after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
 
 .imgHeaderLogo {
   margin-top: 40px;
@@ -79,8 +119,6 @@ header {
   /* padding: 32px; */
 
 }
-
-
 .divIdenticContainer {
   width: 595px;
   height: 492px;
@@ -88,7 +126,6 @@ header {
   position: relative;
   /* background-color: lightskyblue; */
 }
-
 .divIdentic {
   position: relative;
   width: 341px;
@@ -110,7 +147,6 @@ header {
   color: #032F48;
   /* background-color: limegreen; */
 }
-
 .divIdenticPointer {
   position: relative;
   width: 82px;
@@ -121,7 +157,6 @@ header {
   
   border: 7px solid #032F48;
 }
-
 .divMenuLorem {
   position: absolute;
   width: 194px;
@@ -295,9 +330,17 @@ header {
 
 .divMenuHeaderBottom a {
   text-decoration: none;
-
   color: #C2C2C2;
+
+  -webkit-transition: width 2s, height 2s, color 2s, background-color 2s, -webkit-transform 2s, text-decoration 5s, text-decoration-color 3s, font-size 1.5s;
+  transition:         width 2s, height 2s, color 2s, background-color 2s,         transform 2s, text-decoration 5s, text-decoration-color 3s, font-size 1.5s;
 }
+
+.divMenuHeaderBottom a:hover {
+  /* font-size: 34px; */
+  color: #032F48;
+}
+
 .navMenuBottom {
   display: flex;
   flex-direction: row;
@@ -306,15 +349,8 @@ header {
   margin-top: 49px;
   margin-left: 168px;
   margin-bottom: 34px;
-  /* color: #C2C2C2; */
-  /* background-color: mediumseagreen; */
-
-  /* font-family: Lato;
-  font-style: normal; */
   font-weight: 900;
   font-size: 22px;
   line-height: 26px;
-  /* display: flex;
-  align-items: center; */
-
 }
+
