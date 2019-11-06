@@ -1,0 +1,319 @@
+/* :root {
+  --background-color: rgb(49, 49, 49);
+  --color: rgb(232, 232, 232);
+  --background-color-object: rgb(77, 77, 77);
+} */
+
+* {
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', 'Times New Roman', sans-serif;
+    font-family: 'Times New Roman', sans-serif; */
+  }
+
+html, body {
+  margin: 0 auto;
+  background-color: white;
+  color: #032F48;
+  /* margin: 0; */
+}
+
+body {
+  width: 1160px;
+}
+
+header {
+  background-color: #FAFAFA;
+
+}
+
+.divMenuHeaderTop {
+  display: flex;
+  flex-direction: row;
+
+  /* font-family: Lato; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* min-height: 109px; */
+  /* background-color: yellow; */
+  margin-bottom: 47px;
+  /* border: 1px solid lightgray; */
+
+}
+.divMenuHeaderTop a {
+  text-decoration: none;
+  color: #151F32;
+}
+.navMenuTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 375px;
+  margin-top: 45px;
+  margin-left: 232px;
+}
+
+.imgHeaderLogo {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.divSing-up {
+  margin-top: 45px;
+  margin-left: 152px;
+  text-decoration: none;
+}
+
+.imgHeaderLock {
+  margin-top: 46px;
+  margin-left: 43px;  
+}
+
+
+
+
+.divMenuBody {
+  display: flex;
+  /* content: ""; */
+  /* padding: 32px; */
+
+}
+
+
+.divIdenticContainer {
+  width: 595px;
+  height: 492px;
+  overflow: hidden;
+  position: relative;
+  /* background-color: lightskyblue; */
+}
+
+.divIdentic {
+  position: relative;
+  width: 341px;
+  height: 132px;
+  /* height: 180px; */
+  left: 160px;
+  /* padding-left: 8px; */
+  top: calc(167px - 109px);
+  
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 110px;
+  line-height: 132px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  
+  color: #032F48;
+  /* background-color: limegreen; */
+}
+
+.divIdenticPointer {
+  position: relative;
+  width: 82px;
+  height: 0px;
+  left: 168px;
+  /* top: calc(132px + 21px); */
+  top: 60px;
+  
+  border: 7px solid #032F48;
+}
+
+.divMenuLorem {
+  position: absolute;
+  width: 194px;
+  height: 66px;
+  left: 168px;
+  top: 400px;
+  
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 192.3%;
+  /* or 23px */
+  
+  color: #344159;  
+}
+.divEqualaizer {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  justify-content: center;
+  /* flex-shrink: 2; */
+  position: absolute;
+  width: 51px;
+  height: 48px;
+  /* left: 604px;
+  top: 506px; */
+  
+  /* width: 595px;
+  height: 492px; */
+
+
+  background: #032F48;
+  transform: translate(544px, 251px);
+}
+
+/*
+  transform
+    перенос
+      translate(sx, sy);
+    поворот
+      rotate(Ndeg)
+    масштабування
+      scale(sx[, sy]); scaleX(sx); scaleY(sy);
+    нахил
+      skewX(<угол>); skewY(<угол>);
+*/
+
+.divSquareContainer {
+  background: #032F48;
+  width: 565px;
+  height: 492px;
+  overflow: hidden;
+  position: relative;
+}
+.divSquareOrange {
+  width: 383.08px;
+  height: 701.61px;
+  background: #E75A31;
+  transform: rotate(45deg) translate(263px, -106.5px);
+  position: absolute;
+  z-index: 1;
+}
+.divSquareLightBlue {
+  width: 207px;
+  height: 207px;
+  background: #78C9C0;
+
+  transform: rotate(0deg) translate(358px, 285px);
+  position: absolute;
+  z-index: 2;
+  /* display: none; */
+}
+.divSquareDarkYellow {
+  width: 383.08px;
+  height: 701.61px;
+  background: #F9BA51;
+  transform: rotate(-45deg) translate(-320px, 209px);
+  position: absolute;
+  z-index: 3;
+}
+.divSquareWhite {
+  width: 133px;
+  height: 48px;
+  background: #FFFFFF;
+  transform: translate(0px, 397px);
+  position: absolute;
+  z-index: 5;
+
+
+  /* text-align: center;
+  text-align: right; */
+  font-weight: 900;
+  font-size: 17px;
+  font-family: Lato;
+  font-style: normal; 
+  color: #151F32;
+
+  /* width: 78px;
+  height: 20px;
+  left: 683px;
+  top: 520px; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 
+  line-height: 20px;
+
+
+   */
+
+
+
+
+}
+.divMarketingAgency {
+  width: 250px;
+  height: 34px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height */
+  /* display: flex; */
+  align-items: center;
+
+  color: #FFFFFF;
+  transform: translate(76px, 90px);
+  position: absolute;
+  z-index: 4;
+  /* display: none; */
+  /* background: rgb(182, 70, 42); */
+}
+.divLoremSquare {
+  width: 190px;
+  height: 75px;
+  /* background: rgb(88, 182, 42); */
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 157.3%;
+  /* or 19px */
+  /* display: flex; */
+  align-items: center;
+  
+  color: #FCD3AC;
+  overflow: hidden;
+  transform: translate(69px, 149px);
+  position: absolute;
+  z-index: 5;
+  /* display: none; */
+}
+.divArrowContainer {
+  width: 70px;
+  height: 25px;
+  transform: translate(69px, 270px);
+  position: absolute;
+  z-index: 6;
+
+  /* background: rgb(42, 61, 182); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+.divMenuHeaderBottom a {
+  text-decoration: none;
+  color: #151F32;
+}
+.navMenuBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 893px;
+  margin-top: 49px;
+  margin-left: 168px;
+  margin-bottom: 34px;
+  color: #C2C2C2;
+  /* background-color: mediumseagreen; */
+
+  /* font-family: Lato;
+  font-style: normal; */
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  /* display: flex;
+  align-items: center; */
+
+}
