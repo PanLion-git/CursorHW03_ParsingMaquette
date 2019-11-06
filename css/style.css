@@ -295,7 +295,8 @@ header {
 
 .divMenuHeaderBottom a {
   text-decoration: none;
-  color: #151F32;
+
+  color: #C2C2C2;
 }
 .navMenuBottom {
   display: flex;
@@ -305,7 +306,7 @@ header {
   margin-top: 49px;
   margin-left: 168px;
   margin-bottom: 34px;
-  color: #C2C2C2;
+  /* color: #C2C2C2; */
   /* background-color: mediumseagreen; */
 
   /* font-family: Lato;
