@@ -5,7 +5,7 @@
 } */
 
 * {
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Lato', 'Times New Roman', sans-serif;
     font-family: 'Times New Roman', sans-serif; */
 }
@@ -14,7 +14,9 @@ html, body {
   margin: 0 auto;
   background-color: white;
   color: #032F48;
-  /* margin: 0; */
+  /* height: 100vh; */
+  font-family: 'Lato', sans-serif;
+
 }
 body {
   width: 1160px;
@@ -23,10 +25,16 @@ header {
   background-color: #FAFAFA;
 }
 
+.divWrapper {
+  max-width: 1160px;
+  width: 100%;
+}
+
 .divMenuHeaderTop {
   display: flex;
   flex-direction: row;
 
+  /* По *{} не підключається */
   /* font-family: Lato; */
   font-style: normal;
   font-weight: bold;
@@ -64,7 +72,7 @@ header {
 }
 
 .divMenuHeaderTop a:active {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: yellow;
 }
 /* .divMenuHeaderTop a:focus {
@@ -76,23 +84,29 @@ header {
   content: '';
   width: 0px;
   height: 3px;
+  border-radius: 2px;
   display: block;
-  background: black;
+  background: #151F32;
   transition: 0.5s;
+  /* Збільшення з ліва (за замовчуванням) */
+  margin-right: auto;
+  /* Збільшення від середини */
+  /* margin: auto; */
+  /* Збільшення з права */
+  /* margin-left: auto; */
+  /* Стрибає нижнє зображення */
+  /* float: right; */
+}
+
+/* Для фіксованого підкреслення першого пункта */
+.navMenuTop  div:first-child a:after {
+  width: 50%;
 }
 
 /* Для анімації підкреслення */
-.divMenuHeaderTop a:hover:after {
+.divMenuHeaderTop a:hover:after, .navMenuTop  div:first-child a:hover:after {
   width: 100%;
 }
-
-
-
-
-
-
-
-
 
 .imgHeaderLogo {
   margin-top: 40px;
@@ -135,7 +149,7 @@ header {
   /* padding-left: 8px; */
   top: calc(167px - 109px);
   
-  font-family: Lato;
+  /* font-family: Lato; */
   font-style: normal;
   font-weight: 900;
   font-size: 110px;
@@ -164,7 +178,7 @@ header {
   left: 168px;
   top: 400px;
   
-  font-family: Lato;
+  /* font-family: Lato; */
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -251,7 +265,7 @@ header {
   text-align: right; */
   font-weight: 900;
   font-size: 17px;
-  font-family: Lato;
+  /* font-family: Lato; */
   font-style: normal; 
   color: #151F32;
 
@@ -277,7 +291,7 @@ header {
   width: 250px;
   height: 34px;
 
-  font-family: Lato;
+  /* font-family: Lato; */
   font-style: normal;
   font-weight: 900;
   font-size: 28px;
@@ -297,7 +311,7 @@ header {
   width: 190px;
   height: 75px;
   /* background: rgb(88, 182, 42); */
-  font-family: Lato;
+  /* font-family: Lato; */
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -332,8 +346,13 @@ header {
   text-decoration: none;
   color: #C2C2C2;
 
-  -webkit-transition: width 2s, height 2s, color 2s, background-color 2s, -webkit-transform 2s, text-decoration 5s, text-decoration-color 3s, font-size 1.5s;
-  transition:         width 2s, height 2s, color 2s, background-color 2s,         transform 2s, text-decoration 5s, text-decoration-color 3s, font-size 1.5s;
+  /* Включення властивостей в анімацію */
+  -webkit-transition: width 2s, height 2s, color 2s, background-color 2s, -webkit-transform 2s, text-decoration 2s, text-decoration-color 2s, font-size 2s;
+  transition:         width 2s, height 2s, color 2s, background-color 2s,         transform 2s, text-decoration 2s, text-decoration-color 2s, font-size 2s;
+
+  /* Для анімації підкреслення */
+  display: inline-block;
+
 }
 
 .divMenuHeaderBottom a:hover {
@@ -341,7 +360,34 @@ header {
   color: #032F48;
 }
 
+/* Для анімації підкреслення */
+.divMenuHeaderBottom a:after {
+  content: '';
+  width: 0px;
+  height: 7px;
+  border-radius: 3px;
+  display: block;
+  background: #032F48;
+  transition: 0.5s;
+  /* Збільшення з ліва (за замовчуванням) */
+  /* margin-right: auto; */
+  /* Збільшення від середини */
+  margin: auto;
+  /* Збільшення з права */
+  /* margin-left: auto; */
+  /* Стрибає нижнє зображення */
+  /* float: right; */
+}
+
+/* Для анімації підкреслення */
+.divMenuHeaderBottom a:hover:after {
+  width: 100%;
+}
+
+
 .navMenuBottom {
+  /* По *{} не підключається */
+  /* font-family: Lato; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
